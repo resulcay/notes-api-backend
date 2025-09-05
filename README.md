@@ -480,7 +480,7 @@ uvicorn main:app --log-level debug
 3. Update API documentation
 4. Update this README if needed
 
-## 🤝 Contributing
+## Contributing
 
 1. Fork the repository
 2. Create a feature branch
