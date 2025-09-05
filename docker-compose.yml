@@ -1,0 +1,23 @@
+version: '3.8'
+
+services:
+  notes-api:
+    build: .
+    ports:
+      - "8000:8000"
+    environment:
+      - PORT=8000
+      - HOST=0.0.0.0
+      - ENVIRONMENT=development
+    env_file:
+      - .env
+    volumes:
+      - .:/app
+      - ./firebase-service-account-key.json:/app/firebase-service-account-key.json
+    restart: unless-stopped
+    healthcheck:
+      test: ["CMD", "curl", "-f", "http://localhost:8000/health"]
+      interval: 30s
+      timeout: 10s
+      retries: 3
+      start_period: 10s

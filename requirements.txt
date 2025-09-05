@@ -1,0 +1,17 @@
+# Application dependencies
+fastapi==0.104.1
+uvicorn[standard]==0.24.0
+firebase-admin==6.2.0
+python-dotenv==1.0.0
+pydantic==2.4.2
+python-multipart==0.0.6
+google-cloud-firestore==2.13.1
+google-auth==2.23.4
+google-cloud-core==2.3.3
+logger==1.4
+
+# Testing dependencies
+pytest==7.4.3
+pytest-asyncio==0.21.1
+pytest-cov==4.1.0
+httpx==0.25.2
