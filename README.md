@@ -462,6 +462,8 @@ uvicorn main:app --log-level debug
 
 ### Code Structure
 
+<!-- markdownlint-disable MD040 -->
+```
 ├── main.py             # Main FastAPI application
 ├── requirements.txt    # Python dependencies
 ├── .env                # Environment variables template
@@ -469,6 +471,7 @@ uvicorn main:app --log-level debug
 ├── docker-compose.yml  # Local development setup
 ├── test_main.py        # Test suite
 └── README.md           # This file
+```
 
 ### Adding New Features
 
