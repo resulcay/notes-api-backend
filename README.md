@@ -25,7 +25,7 @@ A secure FastAPI backend for a note-taking application with Firebase integration
 ### 1. Clone the Repository
 
 ```bash
-git clone ...
+git clone https://github.com/resulcay/notes-api-backend
 cd notes-api-backend
 ```
 
